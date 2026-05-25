@@ -1,0 +1,72 @@
+@utility seo-section {
+  padding: 72px var(--space-24);
+  background: var(--off-white);
+  color: var(--text-main);
+}
+
+@utility seo-container {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+@utility seo-title {
+  max-width: 820px;
+  margin: 0;
+  color: var(--section-title-color);
+  font-size: clamp(32px, 4vw, 54px);
+  font-weight: var(--font-weight-display);
+  line-height: var(--line-height-heading);
+  letter-spacing: 0;
+}
+
+@utility seo-copy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--content-gap-lg);
+  margin-top: var(--content-gap-lg);
+}
+
+@utility seo-subtitle {
+  margin: var(--space-40) 0 0;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: var(--line-height-title);
+  letter-spacing: 0;
+}
+
+@utility seo-steps {
+  display: grid;
+  gap: var(--content-gap-sm);
+  margin: var(--content-gap-lg) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@utility seo-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-16);
+}
+
+@utility seo-step-number {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-circle);
+  background: var(--text-main);
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+@utility seo-step-copy {
+  display: block;
+  margin-top: var(--space-10);
+}
+
+@utility seo-wide-copy {
+  max-width: 980px;
+  margin-top: var(--space-20);
+}

@@ -1,0 +1,67 @@
+@utility audience-container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding: 0 var(--space-32);
+}
+
+@utility audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  margin-top: var(--content-gap-xl);
+}
+
+@utility audience-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--audience-card-padding);
+  border: 1px solid var(--line);
+  border-radius: var(--audience-card-radius);
+  background: var(--surface);
+}
+
+@utility audience-card-icon {
+  display: inline-flex;
+  width: var(--audience-card-icon-size);
+  height: var(--audience-card-icon-size);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--audience-card-icon-radius);
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+@utility audience-card-title {
+  margin: var(--space-16) 0 0;
+  color: var(--ink-1);
+  font-size: var(--font-size-card-title-lg);
+  font-weight: var(--font-weight-strong);
+  line-height: var(--line-height-title);
+}
+
+@utility audience-card-lead {
+  margin: var(--space-10) 0 0;
+  color: var(--ink-2);
+  font-size: var(--font-size-15);
+  line-height: var(--line-height-copy);
+}
+
+@utility audience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-top: auto;
+  padding-top: var(--space-20);
+}
+
+@utility audience-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-6) var(--space-10);
+  border: 1px solid var(--blue-line);
+  border-radius: var(--radius-pill);
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-semibold);
+}
