@@ -1,0 +1,42 @@
+/* ============================================================
+   Keyframe definitions
+   ============================================================ */
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 9px));
+  }
+}
+
+/* ============================================================
+   Micro-interaction animations
+   ============================================================ */
+
+/* Card hover lift ------------------------------------------ */
+@media (hover: hover) {
+  .benefit-card:hover,
+  .feature-card:hover,
+  .pricing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(10, 15, 31, 0.08);
+  }
+}
+
+/* Reduced motion ------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

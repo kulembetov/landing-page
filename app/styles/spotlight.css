@@ -1,0 +1,52 @@
+@utility spotlight-carousel {
+  position: relative;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 0 var(--space-32);
+}
+
+@utility spotlight-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-circle);
+  background: var(--surface);
+  color: var(--ink-1);
+  box-shadow: none;
+  transform: translateY(-50%);
+}
+
+@utility spotlight-arrow-prev {
+  left: -8px;
+}
+
+@utility spotlight-arrow-next {
+  right: -8px;
+}
+
+@utility spotlight-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(78%, 980px);
+  gap: var(--space-28);
+  overflow-x: auto;
+  padding: var(--space-6) 0 var(--content-gap-sm);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+@utility spotlight-slide {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  scroll-snap-align: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-20);
+  background: var(--surface);
+  box-shadow: none;
+}
