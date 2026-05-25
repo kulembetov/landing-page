@@ -1,0 +1,57 @@
+@utility segmented-control {
+  display: flex;
+  justify-content: safe center;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-bottom: var(--space-24);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.segmented-control::-webkit-scrollbar {
+  display: none;
+}
+
+@utility segmented-list {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  gap: var(--space-2);
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+}
+
+.segmented-control[data-tone="dark"] .segmented-list {
+  border-color: var(--control-on-dark-border);
+  background: var(--surface-on-dark-bg);
+}
+
+@utility segmented-tab {
+  min-height: 42px;
+  flex: none;
+  padding: 9px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink-3);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.segmented-control[data-tone="dark"] .segmented-tab {
+  color: var(--text-on-dark-soft);
+}
+
+.segmented-tab[aria-selected="true"] {
+  border: none;
+  background: var(--cta-primary-gradient);
+  color: var(--white);
+  font-weight: var(--font-weight-semibold);
+}

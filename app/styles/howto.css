@@ -1,0 +1,25 @@
+@utility howto-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1120px);
+  justify-content: center;
+  gap: var(--content-gap-xl);
+  max-width: 1280px;
+  margin: var(--space-36) auto 0;
+  padding: 0 var(--space-32);
+}
+
+@utility howto-device {
+  width: min(100%, 1120px);
+  margin-inline: auto;
+  padding: var(--space-12);
+  border: 1px solid var(--control-on-dark-border);
+  border-radius: var(--radius-24);
+  background: var(--surface-on-dark-bg);
+}
+
+@utility howto-screen {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+  background: var(--dark-device-screen);
+}

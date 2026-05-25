@@ -1,0 +1,48 @@
+@utility feature-card {
+  padding: var(--feature-card-padding);
+  border: 1px solid var(--line);
+  border-radius: var(--feature-card-radius);
+  background: var(--surface);
+}
+
+@utility feature-card-icon {
+  display: inline-flex;
+  width: var(--feature-card-icon-size);
+  height: var(--feature-card-icon-size);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--content-gap-md);
+  border: 1px solid var(--feature-card-icon-border);
+  border-radius: var(--feature-card-icon-radius);
+  background: var(--feature-card-icon-bg);
+  color: var(--feature-card-icon-color);
+}
+
+@utility feature-card-title {
+  margin: 0;
+  font-size: var(--feature-card-title-size);
+  font-weight: var(--font-weight-strong);
+  line-height: var(--feature-card-title-line-height);
+}
+
+@utility feature-card-desc {
+  margin-top: var(--feature-card-desc-gap);
+  color: var(--ink-2);
+  line-height: var(--line-height-body-relaxed);
+}
+
+/* ============================================================
+   Feature card dark-card context styles
+   ============================================================ */
+.section-panel-dark .feature-card {
+  --feature-card-icon-border: var(--feature-card-dark-icon-border);
+  --feature-card-icon-bg: var(--feature-card-dark-icon-bg);
+  --feature-card-icon-color: var(--feature-card-dark-icon-color);
+  border-color: var(--feature-card-dark-border);
+  background: var(--feature-card-dark-bg);
+  color: var(--white);
+  text-align: left;
+}
+.section-panel-dark .feature-card-desc {
+  color: var(--feature-card-dark-desc);
+}
