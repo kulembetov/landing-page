@@ -1,6 +1,5 @@
 import { FadeUp } from "@/components/ui/fade-up";
 import { SectionHeader } from "@/components/ui/section-header";
-import { LosslessPicture } from "@/components/ui/lossless-picture";
 import { HOWIT_COPY } from "@/lib/landing-content";
 import type { CSSProperties } from "react";
 
@@ -34,14 +33,18 @@ export function Howto() {
           <FadeUp className="min-w-0">
             <div className="howto-device">
               <div className="howto-screen">
-                <LosslessPicture
-                  pictureClassName="media-fill"
-                  className="block w-full h-full object-contain"
-                  src="/slides-6/processes-after.webp"
-                  alt="Готовый слайд с процессом, созданный Present Simple"
-                  width={1600}
-                  height={900}
-                />
+                <video
+                  className="howto-video"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster="/slides-6/processes-after.webp"
+                  aria-label="Как работает ИИ для создания презентаций в presentsimple"
+                >
+                  <source src="/how-it-works.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </FadeUp>
